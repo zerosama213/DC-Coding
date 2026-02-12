@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Page</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffe6f0;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        color: #d63384;
+        margin-bottom: 30px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 18px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        position: absolute;
+        transition: 0.2s;
+    }
+
+    #yesBtn {
+        background-color: #28a745;
+        color: white;
+        position: static;
+        margin-right: 20px;
+    }
+
+    #noBtn {
+        background-color: #dc3545;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Will you be my valentine? 🌹</h1>
+    <button id="yesBtn" onclick="alert('YOU & Nabil LOVE 4 EVER! ❤️')">Yes</button>
+    <button id="noBtn">No</button>
+</div>
+
+<script>
+    const noBtn = document.getElementById("noBtn");
+
+    noBtn.addEventListener("mouseover", function() {
+        const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+        const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+
+        noBtn.style.left = x + "px";
+        noBtn.style.top = y + "px";
+    });
+</script>
+
+</body>
+</html>
