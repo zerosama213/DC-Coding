@@ -1,0 +1,60 @@
+# ============================================
+# GCC Task Dashboard - .gitignore
+# ============================================
+
+# Environment variables (contains secrets)
+.env
+.env.local
+.env.*.local
+
+# Node.js
+node_modules/
+npm-debug.log
+npm-error.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# SQLite Database (contains user data)
+tasks.db
+*.sqlite
+*.sqlite3
+*.db
+
+# Backups and exports
+*.backup
+*.bak
+backups/
+exports/
+*-export-*.json
+backup-*.json
+
+# IDE and Editor files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Production build
+dist/
+build/
